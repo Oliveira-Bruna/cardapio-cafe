@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="../js/login.js"></script>
+  <title>Login</title>
+</head>
+
+<body class="bg-[url(../img/bgUser.jpg)] flex items-center justify-center min-h-screen">
+
+  <div class="bg-white rounded-2xl shadow-xl flex flex-col md:flex-row max-w-4xl w-full max-h-3xl h-full">
+
+    <!-- Imagem -->
+    <div class="hidden md:flex items-center justify-center w-1/2 bg-amber-700 rounded-l-2xl">
+      <img src="../img/logoWhite.png" alt="Imagem Login" class="w-80">
+    </div>
+
+    <!-- Formulário -->
+    <div class="w-full md:w-1/2 p-8">
+      <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Login</h1>
+
+      <form id="loginForm" class="space-y-6">
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu email"
+            class="w-full mt-1 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required>
+        </div>
+
+        <!-- Senha -->
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Senha</label>
+          <input type="password" id="password" name="password" placeholder="Digite sua senha"
+            class="w-full mt-1 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required>
+        </div>
+
+        <!-- Botão -->
+        <div class="flex justify-center">
+          <button type="submit"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-md shadow-md">
+            Entrar
+          </button>
+        </div>
+
+      </form>
+      <p class="mt-2">Ainda não tem usuário? Clique <a href="cadastroUsuario.html" class="text-sky-700">Aqui</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

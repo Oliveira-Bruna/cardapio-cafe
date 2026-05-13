@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="../js/cadastro-usuario.js"></script>
+  <title>Cadastro de Usuário</title>
+</head>
+
+<body class="bg-gray-50 bg-[url(../img/bgUser.jpg)]">
+
+  <!-- Conteúdo -->
+  <main class="flex mt-9 justify-center items-center min-h-min">
+    <div class="bg-white rounded-2xl shadow-xl flex flex-col md:flex-row gap-8 max-w-5xl w-full">
+
+      <!-- Imagem -->
+      <div class="flex justify-center bg-amber-700 items-center ">
+        <img src="../img/logoWhite.png" alt="Cadastro" class="w-80">
+      </div>
+
+      <!-- Formulário -->
+      <div class="flex-1 p-8 ">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Cadastro de Usuário</h1>
+
+        <form id="cadastroUsuario" action="#" method="post" class="space-y-4">
+
+          <!-- Nome -->
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Nome Completo</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome completo"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required>
+          </div>
+
+          <!-- CPF -->
+          <div>
+            <label for="cpf" class="block text-sm font-medium text-gray-700">CPF</label>
+            <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required>
+          </div>
+
+          <!-- Telefone -->
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700">Telefone</label>
+            <input type="text" name="phone" id="phone" placeholder="(00) 00000-0000"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required>
+          </div>
+
+          <!-- E-mail -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required>
+          </div>
+
+          <!-- Senha -->
+          <div>
+            <label for="password" class="block text-sm font-medium text-gray-700">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Crie uma senha"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required>
+          </div>
+
+          <!-- Botões -->
+          <div class="flex gap-4 justify-center">
+            <button type="submit"
+              class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md shadow-md">
+              Cadastrar
+            </button>
+            
+            <button type="reset"
+              class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-6 py-2 rounded-md shadow-md">
+              Limpar
+            </button>
+          </div>
+
+        </form>
+
+		<p class="mt-2 text-center">Já tem usuário? Clique <a href="login.html" class="text-sky-700">Aqui</a></p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

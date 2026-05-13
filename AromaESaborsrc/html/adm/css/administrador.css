@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color:#F2E3C6
+}
+
+/* __________________Responsividade________________________________ */
+@media (max-width : 768px) {
+	object, iframe, header {
+		width: 100%;
+		height: 330px;
+		display: block;
+	}
+}

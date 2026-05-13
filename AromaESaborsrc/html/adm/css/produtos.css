@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1{
+	margin: 20px;
+	font-size: 30px;
+	text-align: center;	
+}
+
+table {
+	width: 95%;
+	height: 100%;
+}
+
+table, th, td {
+	border: 1px solid #5c4530;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 10px;
+	text-align: center;
+	max-width: 150px;
+}
+
+
+th {
+	background-color: #705740;
+	color: #ffffff;
+}
+
+td button {
+	width: 40px;
+	height: 40px;
+	background-color: #ffffff;
+	border: none;
+}
+
+td button:hover {
+	cursor: pointer;
+	background-color: #caf0b1;
+	border: 1px solid #8eaa79;
+	border-radius: 5px;
+}
+
+img{
+	width: 28px;
+	height: 28px;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+}
+
+.modal-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* __________________Responsividade________________________________ */
+@media (max-width : 768px) {
+	object, iframe, header {
+		width: 100%;
+		height: 330px;
+		display: flex;
+	}
+
+	table{
+		width: 100%;
+	}
+}

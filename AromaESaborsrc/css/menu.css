@@ -1,0 +1,90 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+header {
+	padding: 10px 5%;
+	background-color: #b66c23;	
+}
+
+#navbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#nav_list {
+	display: flex;
+	list-style: none;
+	gap: 30px;
+}
+
+.nav-item a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-weight: 600;
+}
+
+#logo {
+	width: 100px;
+}
+
+button {
+	font-family: 'Times New Roman';
+	font-weight: bold;
+	color: black;
+	font-size: 15px;
+	text-shadow: 1px 1px 0px #D7DEDA;
+	box-shadow: 1px 1px 1px #BEE2F9;
+	padding: 10px 25px;
+	border-radius: 6px;
+	border: none;
+	background: #fcb634;
+	cursor: pointer;
+	display: flex;
+}
+
+button:hover {
+	background: #FFD808;
+}
+
+.botao img{
+	width: 28px;
+	height: 28px;
+}
+
+button p{
+	font-size: 19px;
+	margin-left: 5px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+	header,iframe, object{
+	width:100%;
+	height:250px;
+	}
+    #navbar {
+		display: flex;
+        align-items: center;
+    }
+
+    #nav_list {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+}

@@ -1,2 +1,2 @@
 # cardapio-cafe
-Projeto front-end de catálogo digital para café.
+Projeto front-end de um cardápio digital para café.
